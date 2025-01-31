@@ -84,13 +84,13 @@ export default function ResumeBuilder() {
   return (
     <div className="container mx-auto py-8">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-4xl font-bold hover:text-blue-500 hover:cursor-pointer">Resume Builder</h1>
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 hover:cursor-pointer">Resume Builder</h1>
         <div className="space-x-4">
           <Button onClick={handleSave} variant="outline">
             <Save className="w-4 h-4 mr-2" />
             Save
           </Button>
-          <Button onClick={handleExport}>
+          <Button onClick={handleExport} className='bg-gradient-to-r from-indigo-600 to-purple-600'>
             <Download className="w-4 h-4 mr-2" />
             Export PDF
           </Button>
