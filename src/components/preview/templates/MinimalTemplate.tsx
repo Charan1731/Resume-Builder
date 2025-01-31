@@ -1,6 +1,5 @@
 import { Resume } from '@/types/resume';
-import { spawn } from 'child_process';
-import { Briefcase, GraduationCap, Award, FolderGit2, Users } from 'lucide-react';
+import { Briefcase, GraduationCap, FolderGit2 } from 'lucide-react';
 
 export default function MinimalTemplate({ resume }: { resume: Resume }) {
   return (

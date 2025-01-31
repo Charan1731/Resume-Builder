@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Resume, ResumeTemplate } from '@/types/resume';
+import { Resume } from '@/types/resume';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import PersonalInfoForm from '@/components/forms/PersonalInfoForm';
@@ -13,7 +13,7 @@ import ReferencesForm from '@/components/forms/ReferencesForm';
 import ResumePreview from '@/components/preview/ResumePreview';
 import TemplateSelector from '@/components/TemplateSelector';
 import { Button } from '@/components/ui/button';
-import { Download, Save, Palette } from 'lucide-react';
+import { Download, Save } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { exportToPDF } from '@/lib/export';
 

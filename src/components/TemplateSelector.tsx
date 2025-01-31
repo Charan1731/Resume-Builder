@@ -1,4 +1,4 @@
-import { Resume, ResumeTemplate } from '@/types/resume';
+import { ResumeTemplate } from '@/types/resume';
 import { templates } from '@/lib/templates';
 import { Card } from '@/components/ui/card';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';

@@ -1,5 +1,4 @@
 import { Resume } from '@/types/resume';
-import { Briefcase, GraduationCap, Award, FolderGit2, Users } from 'lucide-react';
 
 export default function ModernTemplate({ resume }: { resume: Resume }) {
   return (
