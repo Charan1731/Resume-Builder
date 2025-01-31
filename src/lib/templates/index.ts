@@ -13,7 +13,7 @@ export const templates: Record<ResumeTemplate, {
   modern: {
     name: 'Modern',
     description: 'Contemporary layout with a creative touch',
-    preview: 'assets/mordern1.webp',
+    preview: '/assets/mordern1.webp',
   },
   professional: {
     name: 'Professional',
