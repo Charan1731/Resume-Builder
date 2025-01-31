@@ -13,7 +13,7 @@ export const templates: Record<ResumeTemplate, {
   modern: {
     name: 'Modern',
     description: 'Contemporary layout with a creative touch',
-    preview: 'assets/mordern.jpeg',
+    preview: 'assets/mordern1.webp',
   },
   professional: {
     name: 'Professional',
@@ -23,6 +23,6 @@ export const templates: Record<ResumeTemplate, {
   creative: {
     name: 'Creative',
     description: 'Bold design for creative industries',
-    preview: 'assets/creative.jpeg',
+    preview: 'assets/mordern.jpeg',
   },
 };

@@ -61,6 +61,26 @@ export default function ProfessionalTemplate({ resume }: { resume: Resume }) {
         </div>
       )}
 
+      {/* projects */}
+      {resume.projects.length>0 && (
+        <div>
+          <h2 className='text-xl font-semibold mb-4'>Projects</h2>
+          <div className='space-y-4'>
+            {resume.projects.map((project) => (
+              <div key={project.id}>
+                <h3 className='text-lg font-medium '>{project.name}</h3>
+                <p className='text-muted-foreground'>{project.description}</p>
+                <div className='flex flex-wrap gap-2 mt-2'>
+                  {project.technologies.map((tech,i) => (
+                    <span key={i} className='text-xs px-2 py-1 bg-primary/10 text-primary rounded'>{tech}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Skills */}
       {resume.skills.length > 0 && (
         <div>

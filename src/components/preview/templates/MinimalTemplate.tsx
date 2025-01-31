@@ -1,4 +1,5 @@
 import { Resume } from '@/types/resume';
+import { spawn } from 'child_process';
 import { Briefcase, GraduationCap, Award, FolderGit2, Users } from 'lucide-react';
 
 export default function MinimalTemplate({ resume }: { resume: Resume }) {
@@ -7,7 +8,7 @@ export default function MinimalTemplate({ resume }: { resume: Resume }) {
       {/* Header */}
       <div className="border-b pb-6">
         <h1 className="text-3xl font-bold">{resume.personalInfo.name}</h1>
-        <div className="text-sm text-muted-foreground mt-2 space-y-1">
+        <div className="text-sm text-muted-foreground mt-12 space-y-1">
           {resume.personalInfo.email && <div>{resume.personalInfo.email}</div>}
           {resume.personalInfo.phone && <div>{resume.personalInfo.phone}</div>}
           {resume.personalInfo.address && <div>{resume.personalInfo.address}</div>}
@@ -58,6 +59,29 @@ export default function MinimalTemplate({ resume }: { resume: Resume }) {
               >
                 {skill.name}
               </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Projects */}
+      {resume.projects.length > 0 && (
+        <div>
+          <div className='flex items-center gap-2 mb-4'>
+            <FolderGit2 className='w-4 h-4' />
+            <h2 className='text-lg font-semibold'>Projects</h2>
+          </div>
+          <div className='space-y-4'>
+            {resume.projects.map((project) => (
+              <div key={project.id}>
+                <h3 className='text-lg font-medium '>{project.name}</h3>
+                <p className='text-muted-foreground'>{project.description}</p>
+                <div className='flex flex-wrap gap-2 mt-2'>
+                  {project.technologies.map((tech,i) => (
+                    <span key={i} className='text-xs px-2 py-1 bg-primary/10 text-primary rounded'>{tech}</span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
