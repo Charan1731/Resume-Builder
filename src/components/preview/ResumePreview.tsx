@@ -19,7 +19,6 @@ export default function ResumePreview({ resume }: ResumePreviewProps) {
 
   return (
     <Card className="p-6 sticky top-8">
-      <h2 className="text-2xl font-semibold mb-6">Preview</h2>
       <div className="prose max-w-none">
         <TemplateComponent resume={resume} />
       </div>

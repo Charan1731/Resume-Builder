@@ -3,9 +3,9 @@ import { Briefcase, GraduationCap, Award, FolderGit2, Users } from 'lucide-react
 
 export default function ModernTemplate({ resume }: { resume: Resume }) {
   return (
-    <div className="grid grid-cols-3 gap-6 text-left">
+    <div className="grid grid-cols-3 gap-4 text-left">
       {/* Sidebar */}
-      <div className="col-span-1 bg-muted p-6 rounded-lg">
+      <div className="col-span-1 bg-muted p-2 rounded-lg">
         <div className="space-y-6">
           {/* Contact */}
           <div>
